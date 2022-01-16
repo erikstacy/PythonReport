@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+import smtplib
 
 load_dotenv()
 
@@ -12,3 +13,18 @@ def getHeader():
 
 def isTestMode():
     return os.getenv('TESTMODE') == 'ON'
+
+def sendEmail(subject, body):
+    emailAddress = os.getenv('EMAIL_ADDRESS')
+    emailPassword = os.getenv('EMAIL_PASSWORD')
+
+    with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+        smtp.ehlo()
+        smtp.starttls()
+        smtp.ehlo()
+
+        smtp.login(emailAddress, emailPassword)
+
+        message = f'Subject: { subject }\n\n{ body }'
+
+        smtp.sendmail(emailAddress, emailAddress, message)                

@@ -1,3 +1,4 @@
+import email
 import requests
 import json
 import os
@@ -21,6 +22,7 @@ class DailyReport:
 
     def insert(self):
         insertDailyReport(self)
+        emailReport(self)
 
 
 def insertDailyReport(dailyReport):
@@ -74,3 +76,18 @@ def insertDailyReport(dailyReport):
         print(f"ERROR writing Daily Report to DB: { res.status_code }")
         print(res.text)
         print('')
+
+def emailReport(dailyReport):
+    subject = f'Daily Report: { dailyReport.day }'
+
+    body = f'Day: { dailyReport.day }\n\n'
+    body += f'Bank Amount: { dailyReport.bankAmount }\n'
+    body += f'Gain/Loss: { dailyReport.bankAmountGL }\n\n'
+    body += f'Investments: { dailyReport.investments }\n'
+    body += f'Gail/Loss: { dailyReport.investmentsGL }\n\n'
+    body += f'Workout Streak: { dailyReport.workoutStreak }\n'
+    body += f'Last Workout: { dailyReport.lastWorkout }\n\n'
+    body += f'Meditation Streak: { dailyReport.meditationStreak }\n'
+    body += f'Last Meditation: { dailyReport.lastMeditation }\n\n'
+
+    sendEmail(subject, body)

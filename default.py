@@ -11,7 +11,7 @@ load_dotenv()
 dayList = getDayList()
 
 # Test Mode
-if isTestMode: print(f"TEST MODE ON")
+if isTestMode(): print(f"TEST MODE ON")
 print('')
 
 # Init Daily Report
