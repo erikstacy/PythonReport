@@ -1,6 +1,8 @@
+import email
 import os
 from dotenv import load_dotenv
 import smtplib
+from email.message import EmailMessage
 
 load_dotenv()
 
@@ -18,6 +20,12 @@ def sendEmail(subject, body):
     emailAddress = os.getenv('EMAIL_ADDRESS')
     emailPassword = os.getenv('EMAIL_PASSWORD')
 
+    msg = EmailMessage()
+    msg['Subject'] = subject
+    msg['From'] = emailAddress
+    msg['To'] = emailAddress
+    msg.add_alternative(body, subtype='html')
+
     with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
         smtp.ehlo()
         smtp.starttls()
@@ -27,4 +35,4 @@ def sendEmail(subject, body):
 
         message = f'Subject: { subject }\n\n{ body }'
 
-        smtp.sendmail(emailAddress, emailAddress, message)                
+        smtp.send_message(msg)                

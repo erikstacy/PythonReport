@@ -80,14 +80,30 @@ def insertDailyReport(dailyReport):
 def emailReport(dailyReport):
     subject = f'Daily Report: { dailyReport.day }'
 
-    body = f'Day: { dailyReport.day }\n\n'
-    body += f'Bank Amount: { dailyReport.bankAmount }\n'
-    body += f'Gain/Loss: { dailyReport.bankAmountGL }\n\n'
-    body += f'Investments: { dailyReport.investments }\n'
-    body += f'Gail/Loss: { dailyReport.investmentsGL }\n\n'
-    body += f'Workout Streak: { dailyReport.workoutStreak }\n'
-    body += f'Last Workout: { dailyReport.lastWorkout }\n\n'
-    body += f'Meditation Streak: { dailyReport.meditationStreak }\n'
-    body += f'Last Meditation: { dailyReport.lastMeditation }\n\n'
+    body = f"""\
+        <!DOCTYPE html>
+        <html>
+            <body>
+                <h1>{ dailyReport.day }</h1>
+                <br>
+                <h3>Bank Amount</h3>
+                <p><b>{ dailyReport.bankAmount }</b></p>
+                <p>Gain/Loss: {dailyReport.bankAmountGL }</p>
+                <br>
+                <h3>Investments</h3>
+                <p><b>{ dailyReport.investments }</b></p>
+                <p>Gain/Loss: {dailyReport.investmentsGL }</p>
+                <br>
+                <h3>Workout Streak</h3>
+                <p><b>{ dailyReport.workoutStreak }</b></p>
+                <p>Last Workout: { dailyReport.lastWorkout }</p>
+                <br>
+                <h3>Meditation Streak</h3>
+                <p><b>{ dailyReport.meditationStreak }</b></p>
+                <p><b>{ dailyReport.meditationStreak }</b></p>
+                <p>Last Meditation: { dailyReport.lastMeditation }</p>
+            </body>
+        </html>
+    """
 
     sendEmail(subject, body)
