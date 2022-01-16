@@ -1,0 +1,2562 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "e7eb4cd9-6156-47b0-8efd-f69766904ae9",
+            "created_time": "2022-01-15T13:31:00.000Z",
+            "last_edited_time": "2022-01-15T14:37:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": null
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": null
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": null
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-15",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 5
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Saturday",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Saturday",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Saturday-e7eb4cd9615647b08efdf69766904ae9"
+        },
+        {
+            "object": "page",
+            "id": "497aa313-5395-4c63-b6df-cfc8e18b5308",
+            "created_time": "2022-01-14T12:08:00.000Z",
+            "last_edited_time": "2022-01-15T13:30:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 7
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2483.1
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 8655.93
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-14",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "3ed7f8f1-a8b8-411c-957d-ac4bc8d4e405",
+                            "name": "Eating Out",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "929e7088-c43d-4f06-a331-1beb8c229298",
+                            "name": "Going Out",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "af7fcc59-52dc-484c-8e75-462a672868eb",
+                            "name": "Robby B",
+                            "color": "green"
+                        },
+                        {
+                            "id": "7ceba7e6-6d1b-4670-b30b-ad78f4d41b80",
+                            "name": "Chahat",
+                            "color": "green"
+                        },
+                        {
+                            "id": "b3d7cd58-da72-40e5-90ae-581b588c30e1",
+                            "name": "Diesel",
+                            "color": "green"
+                        },
+                        {
+                            "id": "d2355c3f-24d0-4973-87e5-0835a2824aea",
+                            "name": "Farouk",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 5
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Friday",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Friday",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Friday-497aa31353954c63b6dfcfc8e18b5308"
+        },
+        {
+            "object": "page",
+            "id": "74dae566-fc25-4411-ad42-0984dc535f0f",
+            "created_time": "2022-01-13T12:03:00.000Z",
+            "last_edited_time": "2022-01-14T13:18:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 6
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "71478cf7-62d7-4024-b9f8-f00c876ec13f",
+                            "name": "Ralph",
+                            "color": "green"
+                        },
+                        {
+                            "id": "68ea0dfa-b68b-4276-8e27-678157b89736",
+                            "name": "Brendan",
+                            "color": "green"
+                        },
+                        {
+                            "id": "f9d72d98-8e81-48f7-9de6-76391111e2f2",
+                            "name": "Martin",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2525.13
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 8754.54
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-13",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 5
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Thursday ",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Thursday ",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Thursday-74dae566fc254411ad420984dc535f0f"
+        },
+        {
+            "object": "page",
+            "id": "d8629040-7aed-4700-817a-f50c5da07416",
+            "created_time": "2022-01-12T12:06:00.000Z",
+            "last_edited_time": "2022-01-14T13:20:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 6
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2579.08
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 8755.64
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-12",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "64598ec3-34b3-4c57-825d-4ebea0fcba2f",
+                            "name": "Household Hangout",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "b5f106dc-22cf-488b-a7fc-02229eb77040",
+                            "name": "Dad",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "9a2fc9e3-2b43-4e93-87e5-db28bff61106",
+                            "name": "Mom",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "d851afe7-3ac9-4c10-9026-bff289afaeb8",
+                            "name": "Matthew",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 10
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Wednesday",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Wednesday",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Wednesday-d86290407aed4700817af50c5da07416"
+        },
+        {
+            "object": "page",
+            "id": "0a633781-aba2-4622-9787-7b5fb4c8d66f",
+            "created_time": "2022-01-11T12:04:00.000Z",
+            "last_edited_time": "2022-01-14T13:17:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 5
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "68ea0dfa-b68b-4276-8e27-678157b89736",
+                            "name": "Brendan",
+                            "color": "green"
+                        },
+                        {
+                            "id": "71478cf7-62d7-4024-b9f8-f00c876ec13f",
+                            "name": "Ralph",
+                            "color": "green"
+                        },
+                        {
+                            "id": "cf929605-d207-4d26-ac59-fad8c1375a6f",
+                            "name": "Kurt",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2592.47
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 8756.63
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-11",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "657dc3fd-2659-4c1c-a824-671d2005557f",
+                            "name": "Taylor",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 10
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "It’s tuesday",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "It’s tuesday",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/It-s-tuesday-0a633781aba2462297877b5fb4c8d66f"
+        },
+        {
+            "object": "page",
+            "id": "c73e75ee-da29-4904-b180-02f475186695",
+            "created_time": "2022-01-10T12:04:00.000Z",
+            "last_edited_time": "2022-01-14T13:17:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 6
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "68ea0dfa-b68b-4276-8e27-678157b89736",
+                            "name": "Brendan",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2559.34
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 8782.82
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-10",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "657dc3fd-2659-4c1c-a824-671d2005557f",
+                            "name": "Taylor",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 5
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Back to work",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Back to work",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Back-to-work-c73e75eeda294904b18002f475186695"
+        },
+        {
+            "object": "page",
+            "id": "c42e9c0f-dd6f-4e52-b550-b4fd88b2e6be",
+            "created_time": "2022-01-09T17:15:00.000Z",
+            "last_edited_time": "2022-01-14T13:17:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 7
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "71478cf7-62d7-4024-b9f8-f00c876ec13f",
+                            "name": "Ralph",
+                            "color": "green"
+                        },
+                        {
+                            "id": "cf929605-d207-4d26-ac59-fad8c1375a6f",
+                            "name": "Kurt",
+                            "color": "green"
+                        },
+                        {
+                            "id": "68ea0dfa-b68b-4276-8e27-678157b89736",
+                            "name": "Brendan",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2652.4
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 8851.23
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-09",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 0
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Vibe Sunday",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Vibe Sunday",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Vibe-Sunday-c42e9c0fdd6f4e52b550b4fd88b2e6be"
+        },
+        {
+            "object": "page",
+            "id": "e2178402-2d2d-4b65-9073-0cb7df3c4005",
+            "created_time": "2022-01-08T14:02:00.000Z",
+            "last_edited_time": "2022-01-14T13:17:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 7
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2651.01
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 9030.38
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-08",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ed7f8f1-a8b8-411c-957d-ac4bc8d4e405",
+                            "name": "Eating Out",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "657dc3fd-2659-4c1c-a824-671d2005557f",
+                            "name": "Taylor",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 0
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Book From Home",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Book From Home",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Book-From-Home-e21784022d2d4b6590730cb7df3c4005"
+        },
+        {
+            "object": "page",
+            "id": "50945700-7dfd-43ed-9ed2-866bc1332f6b",
+            "created_time": "2022-01-07T12:04:00.000Z",
+            "last_edited_time": "2022-01-15T13:28:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 8
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2655.63
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 8871.21
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-07",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "3ed7f8f1-a8b8-411c-957d-ac4bc8d4e405",
+                            "name": "Eating Out",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "929e7088-c43d-4f06-a331-1beb8c229298",
+                            "name": "Going Out",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "64598ec3-34b3-4c57-825d-4ebea0fcba2f",
+                            "name": "Household Hangout",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "af7fcc59-52dc-484c-8e75-462a672868eb",
+                            "name": "Robby B",
+                            "color": "green"
+                        },
+                        {
+                            "id": "b3d7cd58-da72-40e5-90ae-581b588c30e1",
+                            "name": "Diesel",
+                            "color": "green"
+                        },
+                        {
+                            "id": "d2355c3f-24d0-4973-87e5-0835a2824aea",
+                            "name": "Farouk",
+                            "color": "green"
+                        },
+                        {
+                            "id": "7ceba7e6-6d1b-4670-b30b-ad78f4d41b80",
+                            "name": "Chahat",
+                            "color": "green"
+                        },
+                        {
+                            "id": "87a29c6d-58fc-4d00-9103-fd4221d9db17",
+                            "name": "Brendan M",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 0
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TGIF",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TGIF",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TGIF-509457007dfd43ed9ed2866bc1332f6b"
+        },
+        {
+            "object": "page",
+            "id": "d63ac6bf-c218-444b-b0aa-cd09f3b3d9a7",
+            "created_time": "2022-01-06T12:03:00.000Z",
+            "last_edited_time": "2022-01-14T13:16:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 5
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2587.07
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 9082.27
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-06",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 5
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "First Full Day Thursday In a While",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "First Full Day Thursday In a While",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/First-Full-Day-Thursday-In-a-While-d63ac6bfc218444bb0aacd09f3b3d9a7"
+        },
+        {
+            "object": "page",
+            "id": "3ae9e5e1-e25a-442c-afea-2b88b73e359e",
+            "created_time": "2022-01-05T12:05:00.000Z",
+            "last_edited_time": "2022-01-14T13:16:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 5
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2536.15
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 9082.27
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-05",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 5
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Hump Day",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Hump Day",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Hump-Day-3ae9e5e1e25a442cafea2b88b73e359e"
+        },
+        {
+            "object": "page",
+            "id": "4e24b7ff-4748-44f0-9000-f5d519cca9fa",
+            "created_time": "2022-01-04T12:03:00.000Z",
+            "last_edited_time": "2022-01-14T13:16:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 4
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2740.85
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 9102.27
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-04",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 10
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Tuesday Babyyyy",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Tuesday Babyyyy",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Tuesday-Babyyyy-4e24b7ff474844f09000f5d519cca9fa"
+        },
+        {
+            "object": "page",
+            "id": "66a4b960-25bf-4acd-9860-c9eacfdb60e7",
+            "created_time": "2022-01-03T12:02:00.000Z",
+            "last_edited_time": "2022-01-14T13:16:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 5
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2667.95
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 6904.51
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-03",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 5
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Back to Work",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Back to Work",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Back-to-Work-66a4b96025bf4acd9860c9eacfdb60e7"
+        },
+        {
+            "object": "page",
+            "id": "7b2eea72-b920-4ecb-a981-6a147c48e8a6",
+            "created_time": "2022-01-02T20:53:00.000Z",
+            "last_edited_time": "2022-01-14T13:21:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 5
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2612.8
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 9178.95
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "929e7088-c43d-4f06-a331-1beb8c229298",
+                            "name": "Going Out",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "657dc3fd-2659-4c1c-a824-671d2005557f",
+                            "name": "Taylor",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 0
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Lazy Sunday",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Lazy Sunday",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Lazy-Sunday-7b2eea72b9204ecba9816a147c48e8a6"
+        },
+        {
+            "object": "page",
+            "id": "d026befd-73ba-4ad5-b938-5aa45e7766ca",
+            "created_time": "2022-01-01T17:25:00.000Z",
+            "last_edited_time": "2022-01-14T13:15:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 5
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2612.81
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 9253.94
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2022-01-01",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 0
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "New Year",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "New Year",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/New-Year-d026befd73ba4ad5b9385aa45e7766ca"
+        },
+        {
+            "object": "page",
+            "id": "34c85e16-5e1e-4c6b-8839-65fd36950d24",
+            "created_time": "2021-12-31T14:24:00.000Z",
+            "last_edited_time": "2022-01-14T13:32:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 5
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "97be4496-1fff-4125-bf0a-3f9a3a936841",
+                            "name": "Matthew",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2611.34
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 9384.12
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2021-12-31",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "3ed7f8f1-a8b8-411c-957d-ac4bc8d4e405",
+                            "name": "Eating Out",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "b5f106dc-22cf-488b-a7fc-02229eb77040",
+                            "name": "Dad",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "657dc3fd-2659-4c1c-a824-671d2005557f",
+                            "name": "Taylor",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 10
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Covid New Years",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Covid New Years",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Covid-New-Years-34c85e165e1e4c6b883965fd36950d24"
+        },
+        {
+            "object": "page",
+            "id": "4e2c2ba4-4cb1-4005-bc16-cb6d792e7a91",
+            "created_time": "2021-12-30T13:17:00.000Z",
+            "last_edited_time": "2022-01-14T13:15:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 4
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2655.21
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 9477.74
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2021-12-30",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 0
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "WFH Thursday: The half day before new year",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "WFH Thursday: The half day before new year",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/WFH-Thursday-The-half-day-before-new-year-4e2c2ba44cb14005bc16cb6d792e7a91"
+        },
+        {
+            "object": "page",
+            "id": "240e2e0a-52e5-4e97-b370-9ca8a50dadda",
+            "created_time": "2021-12-29T13:48:00.000Z",
+            "last_edited_time": "2022-01-14T13:15:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 5
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2609.27
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 9589.93
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2021-12-29",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 0
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "WHF Wednesday: Covid Edition",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "WHF Wednesday: Covid Edition",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/WHF-Wednesday-Covid-Edition-240e2e0a52e54e97b3709ca8a50dadda"
+        },
+        {
+            "object": "page",
+            "id": "8babfd78-432c-44d4-875f-107b3a6ccb7e",
+            "created_time": "2021-12-28T13:03:00.000Z",
+            "last_edited_time": "2022-01-14T13:14:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 4
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2595.06
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 9589.93
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2021-12-28",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 0
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "WFH Tuesday: Covid Chronicles",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "WFH Tuesday: Covid Chronicles",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/WFH-Tuesday-Covid-Chronicles-8babfd78432c44d4875f107b3a6ccb7e"
+        },
+        {
+            "object": "page",
+            "id": "0931c633-bb1d-43ee-8d83-5426c8657c5f",
+            "created_time": "2021-12-27T13:21:00.000Z",
+            "last_edited_time": "2022-01-14T13:14:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 4
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": 2521.4
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": 9702.28
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2021-12-27",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5cc53f7a-484b-4116-a2d2-1e85d6005c46",
+                            "name": "Work",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "4b445924-dca3-44d4-9a41-3390a1b73c63",
+                            "name": "Gaming",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 0
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "WFH Monday: Covid Edition",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "WFH Monday: Covid Edition",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/WFH-Monday-Covid-Edition-0931c633bb1d43ee8d835426c8657c5f"
+        },
+        {
+            "object": "page",
+            "id": "984e51cb-4a75-4ab8-8277-6eb3e8a7f263",
+            "created_time": "2021-12-26T14:32:00.000Z",
+            "last_edited_time": "2021-12-31T14:24:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 4
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": null
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": null
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2021-12-26",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 0
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Lazy Sunday: WITH COVID",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Lazy Sunday: WITH COVID",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Lazy-Sunday-WITH-COVID-984e51cb4a754ab882776eb3e8a7f263"
+        },
+        {
+            "object": "page",
+            "id": "bb243fc2-6666-4287-a6f4-a4ecf0cea78b",
+            "created_time": "2021-12-26T00:50:00.000Z",
+            "last_edited_time": "2022-01-14T13:31:00.000Z",
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "852e64ee-c7e5-43fa-bb0d-2e5f98199867"
+            },
+            "archived": false,
+            "properties": {
+                "Rating": {
+                    "id": "%3F%60ov",
+                    "type": "number",
+                    "number": 6
+                },
+                "OnlineHangout": {
+                    "id": "%40qdW",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fa5debe2-da29-453a-bb60-e1e878a16eed",
+                            "name": "Nana",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "095ba091-5bc4-4339-8e43-5ed91fc2252d",
+                            "name": "Poppy",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "7bed62ae-3378-436f-a6de-4576946e6385",
+                            "name": "Uncle Michael",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "06a15aa6-bd2e-489c-95d7-4d6b1f4f2571",
+                            "name": "Uncle Rich",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "4795998b-02e2-433b-8577-76259eb2cc02",
+                            "name": "Dad",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "36ad9423-f749-4ad6-a978-32b5ed8e66c9",
+                            "name": "Mom",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "97be4496-1fff-4125-bf0a-3f9a3a936841",
+                            "name": "Matthew",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "WorkedOut": {
+                    "id": "E%3EEp",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Vacation": {
+                    "id": "FB%7Co",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Investing": {
+                    "id": "QDfl",
+                    "type": "number",
+                    "number": null
+                },
+                "BankAmount": {
+                    "id": "WAv%5D",
+                    "type": "number",
+                    "number": null
+                },
+                "Day": {
+                    "id": "_%7Cp%3B",
+                    "type": "date",
+                    "date": {
+                        "start": "2021-12-25",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "DateNight": {
+                    "id": "d%3E%3BQ",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Events": {
+                    "id": "mvg%3B",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Hangout": {
+                    "id": "qwJj",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "657dc3fd-2659-4c1c-a824-671d2005557f",
+                            "name": "Taylor",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Meditated": {
+                    "id": "~WSW",
+                    "type": "number",
+                    "number": 0
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "COVID CHRISTMAS",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "COVID CHRISTMAS",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/COVID-CHRISTMAS-bb243fc266664287a6f4a4ecf0cea78b"
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false
+}
