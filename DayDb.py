@@ -18,10 +18,12 @@ class Day:
         self.investments = investments
 
 def getDayList():
-    url = f"https://api.notion.com/v1/databases/{ dayDatabaseId }/query"
+    printToConsole('Getting Day List from Notion')
+    url = (f"https://api.notion.com/v1/databases/{ dayDatabaseId }/query")
 
     res = requests.request("POST", url, headers=getHeader())
     if res.status_code != 200:
+        printToConsole('Failed to get Day List from Notion')
         exit
 
     data = res.json()
@@ -41,4 +43,5 @@ def getDayList():
             row['properties']['Investing']['number']
         ))
     
+    printToConsole('Finished getting Day List')
     return daysList

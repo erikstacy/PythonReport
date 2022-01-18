@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 import smtplib
 from email.message import EmailMessage
+import datetime
 
 load_dotenv()
 
@@ -17,6 +18,7 @@ def isTestMode():
     return os.getenv('TESTMODE') == 'ON'
 
 def sendEmail(subject, body):
+    printToConsole('Sending Email')
     emailAddress = os.getenv('EMAIL_ADDRESS')
     emailPassword = os.getenv('EMAIL_PASSWORD')
 
@@ -35,4 +37,8 @@ def sendEmail(subject, body):
 
         message = f'Subject: { subject }\n\n{ body }'
 
-        smtp.send_message(msg)                
+        smtp.send_message(msg)
+        printToConsole('Email Sent')        
+
+def printToConsole(text):
+    print(f'{ datetime.datetime.now() }: { text }\n')

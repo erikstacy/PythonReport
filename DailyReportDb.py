@@ -1,8 +1,10 @@
 import email
+from xmlrpc.client import DateTime
 import requests
 import json
 import os
 from dotenv import load_dotenv
+import datetime
 from core import *
 
 load_dotenv()
@@ -23,9 +25,71 @@ class DailyReport:
     def insert(self):
         insertDailyReport(self)
         emailReport(self)
+    
+    def setValues(self, dayList):
+        printToConsole('Start setting Daily Report values')
+        # Test Mode
+        if isTestMode(): print(f"TEST MODE ON")
+        print('')
+
+        # Date
+        self.day = dayList[0].day
+        print(f"Date: { self.day }")
+        print('')
+
+        # Bank Account
+        self.bankAmount = dayList[0].bankAmount
+        self.bankAmountGL = dayList[0].bankAmount - dayList[1].bankAmount
+        print(f"Bank Amount: { self.bankAmount }")
+        print(f"Gain/Loss: {self.bankAmountGL }")
+        print('')
+
+        # Investments
+        self.investments = dayList[0].investments
+        self.investmentsGL = dayList[0].investments - dayList[1].investments
+        print(f"Investments: { self.investments }")
+        print(f"Gain/Loss: {self.investmentsGL }")
+        print('')
+
+        # Workout
+        self.workoutStreak = 0
+        i = 0
+        while dayList[i].workedOut != False:
+            self.workoutStreak += 1
+            i += 1
+        if self.workoutStreak == 0:
+            for day in dayList:
+                if day.workedOut == True:
+                    self.lastWorkout = day.day
+                    break
+        else:
+            self.lastWorkout = dayList[0].day
+        print(f"Workout Streak: { self.workoutStreak }")
+        print(f"Last Work Out: {self.lastWorkout }")
+        print('')
+
+        # Meditation
+        self.meditationStreak = 0
+        i = 0
+        while dayList[i].meditated != False:
+            self.meditationStreak += 1
+            i += 1
+        if self.meditationStreak == 0:
+            for day in dayList:
+                if day.meditated > 0:
+                    self.lastMeditation = day.day
+                    break
+        else:
+            self.lastMeditation = dayList[0].day
+        print(f"Mediation Streak: { self.meditationStreak }")
+        print(f"Last Meditation: { self.lastMeditation }")
+        print('')
+
+        printToConsole('Daily Report values set')
 
 
 def insertDailyReport(dailyReport):
+    printToConsole('Start inserting Daily Report to Notion')
     url = 'https://api.notion.com/v1/pages'
 
     newPageData = {
@@ -70,14 +134,12 @@ def insertDailyReport(dailyReport):
     data = json.dumps(newPageData)
     res = requests.request('POST', url, headers=getHeader(), data=data)
     if res.status_code == 200:
-        print('Daily Report Wrote to DB')
-        print('')
+        printToConsole('Daily Report successfully inserted to Notion')
     else:
-        print(f"ERROR writing Daily Report to DB: { res.status_code }")
+        printToConsole(f"ERROR writing Daily Report to DB: { res.status_code }")
         print(res.text)
-        print('')
 
-def emailReport(dailyReport):
+def emailReport(dailyReport):    
     subject = f'Daily Report: { dailyReport.day }'
 
     body = f"""\
