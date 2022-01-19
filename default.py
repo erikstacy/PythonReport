@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 from core import *
 from DayDb import *
-from DailyReportDb import * 
+from DailyReportDb import *
 
 load_dotenv()
 
@@ -16,5 +16,7 @@ dayList = getDayList()
 dailyReport = DailyReport
 dailyReport.setValues(this, dayList)
 dailyReport.insert(this)
+
+insertNewDay()
 
 printToConsole('Task Completed')

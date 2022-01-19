@@ -1,3 +1,5 @@
+from datetime import date
+import calendar
 import requests
 import json
 import os
@@ -45,3 +47,40 @@ def getDayList():
     
     printToConsole('Finished getting Day List')
     return daysList
+
+def insertNewDay():
+    printToConsole('Start inserting New Day to Notion')
+    url = 'https://api.notion.com/v1/pages'
+
+    curr_date = date.today()
+
+    newPageData = {
+        "parent": { "database_id": dayDatabaseId },
+        "properties": {
+            "Name": {
+                "title": [
+                    {
+                        "text": {
+                            "content": calendar.day_name[curr_date.weekday()],
+                        }
+                    }
+                ]
+            },
+            "Day": {
+                "date": {
+                    "start": curr_date.strftime("%Y-%m-%d"),
+                }
+            },
+            "Meditated": {
+                "number": 0,
+            },
+        }
+    }
+
+    data = json.dumps(newPageData)
+    res = requests.request('POST', url, headers=getHeader(), data=data)
+    if res.status_code == 200:
+        printToConsole('New Day successfully inserted to Notion')
+    else:
+        printToConsole(f"ERROR writing Day to DB: { res.status_code }")
+        print(res.text)
