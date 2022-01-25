@@ -12,6 +12,7 @@ load_dotenv()
 dailyReportDatabaseId = os.getenv('DAILY_REPORT_DATABASE_ID') if not isTestMode() else os.getenv('TEST_DAILY_REPORT_DATABASE_ID')
 
 class DailyReport:
+    dayOfWeek = None
     day = None
     bankAmount = None
     bankAmountGL = None
@@ -31,6 +32,10 @@ class DailyReport:
         # Test Mode
         if isTestMode(): print(f"TEST MODE ON")
         print('')
+
+        #Day Of Week
+        self.dayOfWeek = dayList[0].dayOfWeek
+        printToConsole(f'Day Of Week set to { self.dayOfWeek}')
 
         # Date
         self.day = dayList[0].day
@@ -95,6 +100,15 @@ def insertDailyReport(dailyReport):
     newPageData = {
         "parent": { "database_id": dailyReportDatabaseId },
         "properties": {
+            "DayOfWeek": {
+                "title": [
+                    {
+                        "text": {
+                            "content": dailyReport.dayOfWeek,
+                        }
+                    }
+                ]
+            },
             "Day": {
                 "date": {
                     "start": dailyReport.day,
@@ -161,7 +175,6 @@ def emailReport(dailyReport):
                 <p>Last Workout: { dailyReport.lastWorkout }</p>
                 <br>
                 <h3>Meditation Streak</h3>
-                <p><b>{ dailyReport.meditationStreak }</b></p>
                 <p><b>{ dailyReport.meditationStreak }</b></p>
                 <p>Last Meditation: { dailyReport.lastMeditation }</p>
             </body>
