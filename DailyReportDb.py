@@ -22,6 +22,7 @@ class DailyReport:
     lastWorkout = None
     meditationStreak = None
     lastMeditation = None
+    daysUntilPayday = None
 
     def insert(self):
         insertDailyReport(self)
@@ -90,6 +91,20 @@ class DailyReport:
         print(f"Last Meditation: { self.lastMeditation }")
         print('')
 
+        # Days Until Paycheck
+        todayDate = datetime.datetime.strptime(self.day, "%Y-%m-%d")
+        todayDay = int(todayDate.strftime("%d"))
+        todayMonth = int(todayDate.strftime("%m"))
+        if todayDay == 19 or todayDay == 4:
+            self.daysUntilPayday = 0
+            print(f"PAY DAY")
+        elif todayDay < 19 and todayDay > 4:
+            self.daysUntilPayday = (todayDate.replace(day=19) - todayDate).days
+            print(f"Days until payday: { self.daysUntilPayday }")
+        elif todayDay > 19 or todayDay < 4:
+            self.daysUntilPayday = (todayDate.replace(month=todayMonth + 1).replace(day=4) - todayDate).days
+            print(f"Days until payday: { self.daysUntilPayday }")
+
         printToConsole('Daily Report values set')
 
 
@@ -142,6 +157,9 @@ def insertDailyReport(dailyReport):
                     "start": dailyReport.lastMeditation,
                 }
             },
+            "DaysUntilPayday": {
+                "number": dailyReport.daysUntilPayday,
+            },
         }
     }
 
@@ -162,6 +180,9 @@ def emailReport(dailyReport):
             <body>
                 <h1>{ dailyReport.day }</h1>
                 <br>
+                <h3>Days Until Payday</h3>
+                <p><b>{ dailyReport.daysUntilPayday }</b></p>
+                <br>
                 <h3>Bank Amount</h3>
                 <p><b>{ dailyReport.bankAmount }</b></p>
                 <p>Gain/Loss: {dailyReport.bankAmountGL }</p>
@@ -177,6 +198,7 @@ def emailReport(dailyReport):
                 <h3>Meditation Streak</h3>
                 <p><b>{ dailyReport.meditationStreak }</b></p>
                 <p>Last Meditation: { dailyReport.lastMeditation }</p>
+                <br>                
             </body>
         </html>
     """
