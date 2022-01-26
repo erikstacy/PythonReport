@@ -26,7 +26,17 @@ def getDayList():
     printToConsole('Getting Day List from Notion')
     url = (f"https://api.notion.com/v1/databases/{ dayDatabaseId }/query")
 
-    res = requests.request("POST", url, headers=getHeader())
+    params = {
+        "sorts": [
+            {
+                "property": "Day",
+                'timestamp': 'created_time',
+                "direction": "descending"
+            }            
+        ]
+    }
+
+    res = requests.request("POST", url, headers=getHeader(), json=params)
     if res.status_code != 200:
         printToConsole('Failed to get Day List from Notion')
         exit
