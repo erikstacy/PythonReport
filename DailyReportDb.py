@@ -92,17 +92,16 @@ class DailyReport:
         print('')
 
         # Days Until Paycheck
-        todayDate = datetime.datetime.strptime(self.day, "%Y-%m-%d")
-        todayDay = int(todayDate.strftime("%d"))
-        todayMonth = int(todayDate.strftime("%m"))
+        todayDay = int(dayList[0].date.strftime("%d"))
+        todayMonth = int(dayList[0].date.strftime("%m"))
         if todayDay == 19 or todayDay == 4:
             self.daysUntilPayday = 0
             print(f"PAY DAY")
         elif todayDay < 19 and todayDay > 4:
-            self.daysUntilPayday = (todayDate.replace(day=19) - todayDate).days
+            self.daysUntilPayday = (dayList[0].date.replace(day=19) - dayList[0].date).days
             print(f"Days until payday: { self.daysUntilPayday }")
         elif todayDay > 19 or todayDay < 4:
-            self.daysUntilPayday = (todayDate.replace(month=todayMonth + 1).replace(day=4) - todayDate).days
+            self.daysUntilPayday = (dayList[0].date.replace(month=todayMonth + 1).replace(day=4) - dayList[0].date).days
             print(f"Days until payday: { self.daysUntilPayday }")
 
         printToConsole('Daily Report values set')
