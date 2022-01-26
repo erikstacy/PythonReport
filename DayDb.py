@@ -20,6 +20,8 @@ class Day:
         self.bankAmount = bankAmount
         self.investments = investments
 
+        self.date = datetime.datetime.strptime(self.day, "%Y-%m-%d")
+
 def getDayList():
     printToConsole('Getting Day List from Notion')
     url = (f"https://api.notion.com/v1/databases/{ dayDatabaseId }/query")
