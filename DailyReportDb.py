@@ -184,31 +184,55 @@ def emailReport(dailyReport):
     body = f"""\
         <!DOCTYPE html>
         <html>
-            <body>
-                <h1>{ dailyReport.day }</h1>
-                <br>
-                <h3>Days Until Payday</h3>
-                <p><b>{ dailyReport.daysUntilPayday }</b></p>
-                <br>
-                <h3>Bank Amount</h3>
-                <p><b>{ dailyReport.bankAmount }</b></p>
-                <p>Gain/Loss: {dailyReport.bankAmountGL }</p>
-                <br>
-                <h3>Investments</h3>
-                <p><b>{ dailyReport.investments }</b></p>
-                <p>Gain/Loss: {dailyReport.investmentsGL }</p>
-                <br>
-                <h3>Workout Streak</h3>
-                <p><b>{ dailyReport.workoutStreak }</b></p>
-                <p>Last Workout: { dailyReport.lastWorkout }</p>
-                <br>
-                <h3>Meditation Streak</h3>
-                <p><b>{ dailyReport.meditationStreak }</b></p>
-                <p>Last Meditation: { dailyReport.lastMeditation }</p>
-                <br>
-                <h3>Days since last date</h3>
-                <p><b>{ dailyReport.daysSinceLastDate }</b></p>
-                <br>
+            <body>                
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <p style="font-size: 30px;">{ dailyReport.day }</p>
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <p style="font-size: 20px; font-weight: bold;">Days</p>
+                    <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; width: fit-content; margin: 10px 0;">
+                        <div style="margin: 2px 16px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <p>Days Until Payday</p>
+                            <p>{ dailyReport.daysUntilPayday }</p>
+                        </div>                    
+                    </div>  
+                    <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; width: fit-content; margin: 10px 0;">
+                        <div style="margin: 2px 16px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <p>Days since last date</p>
+                            <p>{ dailyReport.daysSinceLastDate }</p>
+                        </div>                        
+                    </div>
+                    <p style="font-size: 20px; font-weight: bold;">Financial</p>
+                    <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; width: fit-content; margin: 10px 0;">
+                        <div style="margin: 2px 16px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <p>Bank Amount</p>
+                            <p>{ dailyReport.bankAmount }</p>
+                            <p>Gain/Loss: { dailyReport.bankAmountGL }</p>
+                        </div>                        
+                    </div>
+                    <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; width: fit-content; margin: 10px 0;">
+                        <div style="margin: 2px 16px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <p>Investments</p>
+                            <p>{ dailyReport.investments }</p>
+                            <p>Gain/Loss: { dailyReport.investmentsGL }</p>
+                        </div>                    
+                    </div>
+                    <p style="font-size: 20px; font-weight: bold;">Health</p>
+                    <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; width: fit-content; margin: 10px 0;">
+                        <div style="margin: 2px 16px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <p>Workout Streak</p>
+                            <p>{ dailyReport.workoutStreak }</p>
+                            <p>Last Workout: { dailyReport.lastWorkout }</p>
+                        </div>                        
+                    </div>
+                    <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; border-radius: 5px; width: fit-content; margin: 10px 0;">
+                        <div style="margin: 2px 16px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <p>Meditation Streak</p>
+                            <p>{ dailyReport.meditationStreak }</p>
+                            <p>Last Meditation: { dailyReport.lastMeditation }</p>
+                        </div>                    
+                    </div> 
+                </div>                
             </body>
         </html>
     """
