@@ -30,33 +30,30 @@ class DailyReport:
         emailReport(self)
     
     def setValues(self, dayList):
-        printToConsole('Start setting Daily Report values')
+        print('Start setting Daily Report values')
         # Test Mode
         if isTestMode(): print(f"TEST MODE ON")
-        print('')
 
         #Day Of Week
         self.dayOfWeek = dayList[0].dayOfWeek
-        printToConsole(f'Day Of Week set to { self.dayOfWeek}')
+        print(f'Day Of Week set to { self.dayOfWeek}')
 
         # Date
         self.day = dayList[0].day
         print(f"Date: { self.day }")
-        print('')
 
         # Bank Account
         self.bankAmount = dayList[0].bankAmount
         self.bankAmountGL = dayList[0].bankAmount - dayList[1].bankAmount
         print(f"Bank Amount: { self.bankAmount }")
         print(f"Gain/Loss: {self.bankAmountGL }")
-        print('')
 
         # Investments
         self.investments = dayList[0].investments
         self.investmentsGL = dayList[0].investments - dayList[1].investments
         print(f"Investments: { self.investments }")
         print(f"Gain/Loss: {self.investmentsGL }")
-        print('')
+
 
         # Workout
         self.workoutStreak = 0
@@ -73,7 +70,6 @@ class DailyReport:
             self.lastWorkout = dayList[0].day
         print(f"Workout Streak: { self.workoutStreak }")
         print(f"Last Work Out: {self.lastWorkout }")
-        print('')
 
         # Meditation
         self.meditationStreak = 0
@@ -90,33 +86,32 @@ class DailyReport:
             self.lastMeditation = dayList[0].day
         print(f"Mediation Streak: { self.meditationStreak }")
         print(f"Last Meditation: { self.lastMeditation }")
-        print('')
 
         # Days Until Paycheck
         todayDay = int(dayList[0].date.strftime("%d"))
         todayMonth = int(dayList[0].date.strftime("%m"))
         if todayDay == 19 or todayDay == 4:
             self.daysUntilPayday = 0
-            printToConsole(f"PAY DAY")
+            print(f"PAY DAY")
         elif todayDay < 19 and todayDay > 4:
             self.daysUntilPayday = (dayList[0].date.replace(day=19) - dayList[0].date).days
-            printToConsole(f"Days until payday: { self.daysUntilPayday }")
+            print(f"Days until payday: { self.daysUntilPayday }")
         elif todayDay > 19 or todayDay < 4:
             self.daysUntilPayday = (dayList[0].date.replace(month=todayMonth + 1).replace(day=4) - dayList[0].date).days
-            printToConsole(f"Days until payday: { self.daysUntilPayday }")
+            print(f"Days until payday: { self.daysUntilPayday }")
 
         # Days Since Last Date
         for day in dayList:
             if "Date" in day.eventsList:
                 self.daysSinceLastDate = (dayList[0].date - day.date).days
-                printToConsole(f"Last date was { self.daysSinceLastDate } days ago")
+                print(f"Last date was { self.daysSinceLastDate } days ago")
                 break
 
-        printToConsole('Daily Report values set')
+        print('Daily Report values set')
 
 
 def insertDailyReport(dailyReport):
-    printToConsole('Start inserting Daily Report to Notion')
+    print('Start inserting Daily Report to Notion')
     url = 'https://api.notion.com/v1/pages'
 
     newPageData = {
@@ -174,12 +169,14 @@ def insertDailyReport(dailyReport):
     }
 
     data = json.dumps(newPageData)
-    res = requests.request('POST', url, headers=getHeader(), data=data)
-    if res.status_code == 200:
-        printToConsole('Daily Report successfully inserted to Notion')
-    else:
-        printToConsole(f"ERROR writing Daily Report to DB: { res.status_code }")
-        print(res.text)
+
+    if getInsertToNotion():
+        res = requests.request('POST', url, headers=getHeader(), data=data)
+        if res.status_code == 200:
+            print('Daily Report successfully inserted to Notion')
+        else:
+            print(f"ERROR writing Daily Report to DB: { res.status_code }")
+            print(res.text)
 
 def emailReport(dailyReport):    
     subject = f'Daily Report: { dailyReport.day }'
@@ -216,4 +213,5 @@ def emailReport(dailyReport):
         </html>
     """
 
-    sendEmail(subject, body)
+    if getSendEmails():
+        sendEmail(subject, body)

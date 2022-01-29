@@ -1,4 +1,3 @@
-import this
 import requests
 import json
 import os
@@ -9,14 +8,14 @@ from DailyReportDb import *
 
 load_dotenv()
 
-printToConsole('Started Task')
+print('Started Task')
 
 dayList = getDayList()
 
 dailyReport = DailyReport
-dailyReport.setValues(this, dayList)
-dailyReport.insert(this)
+dailyReport.setValues(dailyReport, dayList)
+dailyReport.insert(dailyReport)
 
 insertNewDay()
 
-printToConsole('Task Completed')
+print('Task Completed')

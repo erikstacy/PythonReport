@@ -17,8 +17,14 @@ def getHeader():
 def isTestMode():
     return os.getenv('TESTMODE') == 'ON'
 
+def getInsertToNotion():
+    return os.getenv('INSERT_TO_NOTION') == 'TRUE'
+
+def getSendEmails():
+    return os.getenv('SEND_EMAILS') == 'TRUE'
+
 def sendEmail(subject, body):
-    printToConsole('Sending Email')
+    print('Sending Email')
     emailAddress = os.getenv('EMAIL_ADDRESS')
     emailPassword = os.getenv('EMAIL_PASSWORD')
 
@@ -38,7 +44,4 @@ def sendEmail(subject, body):
         message = f'Subject: { subject }\n\n{ body }'
 
         smtp.send_message(msg)
-        printToConsole('Email Sent')        
-
-def printToConsole(text):
-    print(f'{ datetime.datetime.now() }: { text }\n')
+        print('Email Sent')

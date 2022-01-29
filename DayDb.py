@@ -24,7 +24,7 @@ class Day:
         self.date = datetime.datetime.strptime(self.day, "%Y-%m-%d")
 
 def getDayList():
-    printToConsole('Getting Day List from Notion')
+    print('Getting Day List from Notion')
     url = (f"https://api.notion.com/v1/databases/{ dayDatabaseId }/query")
 
     params = {
@@ -39,7 +39,7 @@ def getDayList():
 
     res = requests.request("POST", url, headers=getHeader(), json=params)
     if res.status_code != 200:
-        printToConsole('Failed to get Day List from Notion')
+        print('Failed to get Day List from Notion')
         exit
 
     data = res.json()
@@ -67,11 +67,11 @@ def getDayList():
             eventsList
         ))
     
-    printToConsole('Finished getting Day List')
+    print('Finished getting Day List')
     return daysList
 
 def insertNewDay():
-    printToConsole('Start inserting New Day to Notion')
+    print('Start inserting New Day to Notion')
     url = 'https://api.notion.com/v1/pages'
 
     curr_date = date.today()
@@ -100,9 +100,11 @@ def insertNewDay():
     }
 
     data = json.dumps(newPageData)
-    res = requests.request('POST', url, headers=getHeader(), data=data)
-    if res.status_code == 200:
-        printToConsole('New Day successfully inserted to Notion')
-    else:
-        printToConsole(f"ERROR writing Day to DB: { res.status_code }")
-        print(res.text)
+
+    if getInsertToNotion():        
+        res = requests.request('POST', url, headers=getHeader(), data=data)
+        if res.status_code == 200:
+            print('New Day successfully inserted to Notion')
+        else:
+            print(f"ERROR writing Day to DB: { res.status_code }")
+            print(res.text)
