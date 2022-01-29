@@ -23,6 +23,7 @@ class DailyReport:
     meditationStreak = None
     lastMeditation = None
     daysUntilPayday = None
+    daysSinceLastDate = None
 
     def insert(self):
         insertDailyReport(self)
@@ -96,13 +97,20 @@ class DailyReport:
         todayMonth = int(dayList[0].date.strftime("%m"))
         if todayDay == 19 or todayDay == 4:
             self.daysUntilPayday = 0
-            print(f"PAY DAY")
+            printToConsole(f"PAY DAY")
         elif todayDay < 19 and todayDay > 4:
             self.daysUntilPayday = (dayList[0].date.replace(day=19) - dayList[0].date).days
-            print(f"Days until payday: { self.daysUntilPayday }")
+            printToConsole(f"Days until payday: { self.daysUntilPayday }")
         elif todayDay > 19 or todayDay < 4:
             self.daysUntilPayday = (dayList[0].date.replace(month=todayMonth + 1).replace(day=4) - dayList[0].date).days
-            print(f"Days until payday: { self.daysUntilPayday }")
+            printToConsole(f"Days until payday: { self.daysUntilPayday }")
+
+        # Days Since Last Date
+        for day in dayList:
+            if "Date" in day.eventsList:
+                self.daysSinceLastDate = (dayList[0].date - day.date).days
+                printToConsole(f"Last date was { self.daysSinceLastDate } days ago")
+                break
 
         printToConsole('Daily Report values set')
 
@@ -159,6 +167,9 @@ def insertDailyReport(dailyReport):
             "DaysUntilPayday": {
                 "number": dailyReport.daysUntilPayday,
             },
+            "DaysSinceLastDate": {
+                "number": dailyReport.daysSinceLastDate,
+            },
         }
     }
 
@@ -197,7 +208,10 @@ def emailReport(dailyReport):
                 <h3>Meditation Streak</h3>
                 <p><b>{ dailyReport.meditationStreak }</b></p>
                 <p>Last Meditation: { dailyReport.lastMeditation }</p>
-                <br>                
+                <br>
+                <h3>Days since last date</h3>
+                <p><b>{ dailyReport.daysSinceLastDate }</b></p>
+                <br>
             </body>
         </html>
     """

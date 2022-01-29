@@ -11,7 +11,7 @@ load_dotenv()
 dayDatabaseId = os.getenv('DAY_DATABASE_ID') if not isTestMode() else os.getenv('TEST_DAY_DATABASE_ID')
 
 class Day:
-    def __init__(self, dayOfWeek, day, rating, workedOut, meditated, bankAmount, investments):
+    def __init__(self, dayOfWeek, day, rating, workedOut, meditated, bankAmount, investments, eventsList):
         self.dayOfWeek = dayOfWeek
         self.day = day
         self.rating = rating
@@ -19,6 +19,7 @@ class Day:
         self.meditated = meditated
         self.bankAmount = bankAmount
         self.investments = investments
+        self.eventsList = eventsList
 
         self.date = datetime.datetime.strptime(self.day, "%Y-%m-%d")
 
@@ -48,7 +49,13 @@ def getDayList():
     #     json.dump(data, f, ensure_ascii=False)
 
     daysList = []
-    for row in data['results']:        
+    for row in data['results']:
+        # Create the Event List
+        eventsList = []
+        for event in row['properties']['Events']['multi_select']:
+            eventsList.append(event['name'])
+
+        # Create the Day List
         daysList.append(Day(
             row['properties']['DayOfWeek']['title'][0]['text']['content'],
             row['properties']['Day']['date']['start'],
@@ -56,7 +63,8 @@ def getDayList():
             row['properties']['WorkedOut']['checkbox'],
             row['properties']['Meditated']['number'],
             row['properties']['BankAmount']['number'],
-            row['properties']['Investing']['number']
+            row['properties']['Investing']['number'],            
+            eventsList
         ))
     
     printToConsole('Finished getting Day List')
