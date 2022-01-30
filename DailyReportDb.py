@@ -97,7 +97,9 @@ class DailyReport:
             self.daysUntilPayday = (dayList[0].date.replace(day=19) - dayList[0].date).days
             print(f"Days until payday: { self.daysUntilPayday }")
         elif todayDay > 19 or todayDay < 4:
-            self.daysUntilPayday = (dayList[0].date.replace(month=todayMonth + 1).replace(day=4) - dayList[0].date).days
+            payDate = dayList[0].date.replace(day=4)
+            payDate = payDate.replace(month=todayMonth + 1)
+            self.daysUntilPayday = (payDate - dayList[0].date).days
             print(f"Days until payday: { self.daysUntilPayday }")
 
         # Days Since Last Date
