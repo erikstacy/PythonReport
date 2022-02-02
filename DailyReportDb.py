@@ -54,7 +54,6 @@ class DailyReport:
         print(f"Investments: { self.investments }")
         print(f"Gain/Loss: {self.investmentsGL }")
 
-
         # Workout
         self.workoutStreak = 0
         i = 0
