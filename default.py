@@ -6,12 +6,17 @@ from WeeklyReportDB import WeeklyReport
 from core import *
 from DayDb import *
 from DailyReportDb import *
+from PersonDb import *
 
 load_dotenv()
 
 print('Started Task')
 
 dayList = getDayList()
+
+personList = getPersonList()
+personList = updatePersonList(personList, dayList)
+sendPersonWarnings(personList)
 
 dailyReport = DailyReport
 dailyReport.setValues(dailyReport, dayList)

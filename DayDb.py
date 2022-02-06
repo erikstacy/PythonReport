@@ -11,7 +11,7 @@ load_dotenv()
 dayDatabaseId = os.getenv('DAY_DATABASE_ID') if not isTestMode() else os.getenv('TEST_DAY_DATABASE_ID')
 
 class Day:
-    def __init__(self, dayOfWeek, day, rating, workedOut, meditated, bankAmount, investments, eventsList):
+    def __init__(self, dayOfWeek, day, rating, workedOut, meditated, bankAmount, investments, eventsList, virtualConversation):
         self.dayOfWeek = dayOfWeek
         self.day = day
         self.rating = rating
@@ -20,6 +20,7 @@ class Day:
         self.bankAmount = bankAmount
         self.investments = investments
         self.eventsList = eventsList
+        self.virtualConversation = virtualConversation
 
         self.date = datetime.datetime.strptime(self.day, "%Y-%m-%d")
 
@@ -54,6 +55,11 @@ def getDayList():
         eventsList = []
         for event in row['properties']['Events']['multi_select']:
             eventsList.append(event['name'])
+        
+        # Create Virtual Conversation List
+        virtualConversation = []
+        for conv in row['properties']['VirtualConversation']['multi_select']:
+            virtualConversation.append(conv['name'])
 
         # Create the Day List
         daysList.append(Day(
@@ -64,7 +70,8 @@ def getDayList():
             row['properties']['Meditated']['number'],
             row['properties']['BankAmount']['number'],
             row['properties']['Investing']['number'],            
-            eventsList
+            eventsList,
+            virtualConversation
         ))
     
     print('Finished getting Day List')
