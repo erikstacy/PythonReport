@@ -51,10 +51,25 @@ def getPersonList():
     return personList
 
 def updatePersonList(personList, dayList):
-    for dayPerson in dayList[0].virtualConversation:
-        for person in personList:            
-            if dayPerson == person.name:
-                person.currentCount = -1                
+    for person in personList:
+        if person.targetProperty == 'VirtualConversation':
+            if [person.name, 'VirtualConversation'] in dayList[0].personList:
+                person.currentCount = -1
+            elif [person.name, 'VirtualHangout'] in dayList[0].personList:
+                person.currentCount = -1
+            elif [person.name, 'Hangout'] in dayList[0].personList:
+                person.currentCount = -1
+
+        if person.targetProperty == 'VirtualHangout':
+            if [person.name, 'VirtualHangout'] in dayList[0].personList:
+                person.currentCount = -1
+            elif [person.name, 'Hangout'] in dayList[0].personList:
+                person.currentCount = -1
+        
+        if person.targetProperty == 'Hangout':
+            if [person.name, 'Hangout'] in dayList[0].personList:
+                person.currentCount = -1
+
     return personList
 
 def sendPersonWarnings(personList):
@@ -95,7 +110,7 @@ def sendPersonEmail(person):
                 <h1>{ person.name }</h1>
                 <br>
                 <h3>Days since { person.targetProperty }</h3>
-                <p><b>{ person.currentCount }</b></p>
+                <p><b>{ person.currentCount }</b></p>                
             </body>
         </html>
     """
